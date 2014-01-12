@@ -23,7 +23,7 @@ please send me a direct message through any of ...
 
 * Kaggle: www.kaggle.com/users/105374
 * Twitter: https://twitter.com/trevs
-* Tumblr: http://trevorstephens.com
+* Tumblr: http://trevorstephens.com/ask
 
 Kind regards,
 
