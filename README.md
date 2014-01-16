@@ -1,4 +1,3 @@
-
 Titanic: Machine Learning from Disaster - Getting Started With R
 ================================================================
 Trevor Stephens - January 2014
@@ -22,9 +21,9 @@ where many others may have already come across the issue before and can jump in 
 If you notice any bugs or typos, or have any suggestions on making the tutorial easier to follow,
 please send me a direct message through any of ...
 
-    Kaggle: www.kaggle.com/users/105374
-    Twitter: https://twitter.com/trevs
-    Tumblr: http://trevorstephens.com
+* Kaggle: www.kaggle.com/users/105374
+* Twitter: https://twitter.com/trevs
+* Tumblr: http://trevorstephens.com/ask
 
 Kind regards,
 
