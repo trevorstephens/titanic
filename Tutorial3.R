@@ -1,5 +1,6 @@
 # Trevor Stephens - 10 Jan 2014
 # Titanic: Getting Started With R - Part 3: Decision Trees
+# Full guide available at http://trevorstephens.com/
 
 # Set working directory and import datafiles
 setwd("~/Kaggle/Titanic")
@@ -47,3 +48,4 @@ fit <- rpart(Survived ~ Pclass + Sex + Age + SibSp + Parch + Fare + Embarked, da
              method="class", control=rpart.control(minsplit=2, cp=0.005))
 new.fit <- prp(fit,snip=TRUE)$obj
 fancyRpartPlot(new.fit)
+

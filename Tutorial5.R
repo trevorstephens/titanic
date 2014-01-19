@@ -1,16 +1,18 @@
 # Trevor Stephens - 18 Jan 2014
 # Titanic: Getting Started With R - Part 5: Random Forests
-
-library(rpart)
-install.packages('randomForest')
-library(randomForest)
-install.packages('party')
-library(party)
+# Full guide available at http://trevorstephens.com/
 
 # Set working directory and import datafiles
 setwd("~/Kaggle/Titanic")
 train <- read.csv("train.csv")
 test <- read.csv("test.csv")
+
+# Install and load required packages for decision trees and forests
+library(rpart)
+install.packages('randomForest')
+library(randomForest)
+install.packages('party')
+library(party)
 
 # Join together the test and train sets for easier feature engineering
 test$Survived <- NA
@@ -91,3 +93,4 @@ fit <- cforest(as.factor(Survived) ~ Pclass + Sex + Age + SibSp + Parch + Fare +
 Prediction <- predict(fit, test, OOB=TRUE, type = "response")
 submit <- data.frame(PassengerId = test$PassengerId, Survived = Prediction)
 write.csv(submit, file = "ciforest.csv", row.names = FALSE)
+

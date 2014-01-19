@@ -1,5 +1,6 @@
 # Trevor Stephens - 9 Jan 2014
 # Titanic: Getting Started With R - Part 2: The gender-class model
+# Full guide available at http://trevorstephens.com/
 
 # Set working directory and import datafiles
 setwd("~/Kaggle/Titanic")
@@ -45,3 +46,4 @@ test$Survived[test$Sex == 'female' & test$Pclass == 3 & test$Fare >= 20] <- 0
 # Create submission dataframe and output to file
 submit <- data.frame(PassengerId = test$PassengerId, Survived = test$Survived)
 write.csv(submit, file = "genderclassmodel.csv", row.names = FALSE)
+

@@ -1,11 +1,13 @@
 # Trevor Stephens - 15 Jan 2014
 # Titanic: Getting Started With R - Part 4: Feature Engineering
+# Full guide available at http://trevorstephens.com/
 
 # Set working directory and import datafiles
 setwd("~/Kaggle/Titanic")
 train <- read.csv("train.csv")
 test <- read.csv("test.csv")
 
+# Install and load required packages for fancy decision tree plotting
 library(rpart)
 library(rattle)
 library(rpart.plot)
@@ -70,3 +72,4 @@ fancyRpartPlot(fit)
 Prediction <- predict(fit, test, type = "class")
 submit <- data.frame(PassengerId = test$PassengerId, Survived = Prediction)
 write.csv(submit, file = "engineeredfeaturestree.csv", row.names = FALSE)
+

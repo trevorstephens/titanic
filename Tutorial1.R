@@ -1,5 +1,6 @@
 # Trevor Stephens - 9 Jan 2014
 # Titanic: Getting Started With R - Part 1: Booting up in R
+# Full guide available at http://trevorstephens.com/
 
 # Set working directory and import datafiles
 setwd("~/Kaggle/Titanic")
@@ -19,3 +20,4 @@ test$Survived <- rep(0, 418)
 # Create submission dataframe and output to file
 submit <- data.frame(PassengerId = test$PassengerId, Survived = test$Survived)
 write.csv(submit, file = "theyallperish.csv", row.names = FALSE)
+
